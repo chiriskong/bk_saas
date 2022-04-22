@@ -13,7 +13,7 @@ specific language governing permissions and limitations under the License.
 
 from django.conf.urls import include, url
 from django.contrib import admin
-
+import views
 urlpatterns = [
     url(r"^admin/", admin.site.urls),
     url(r"^account/", include("blueapps.account.urls")),
