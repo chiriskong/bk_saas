@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流氓广告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+          height: 3000px;
+        }
+        
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+			position:fixed;
+			right:0;
+			bottom:100px;
+			
+			
+        }
+        
+        #box2 {
+            width: 30px;
+            height: 30px;
+            background-color: chartreuse;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="box1">
+      <div id="box2">X</div>
+      我是流氓广告
+  </div>
+  </div>
+    <script>
+      var box = document.getElementById('box1');
+	  var tag = document.getElementById('box2');
+	  tag.onclick = function(){
+	  box.style.display='none';
+	  setTimeout(function(){
+	  box.style.display='block';},1000);
+	  }
+    </script>
+</body>
+
+</html>
