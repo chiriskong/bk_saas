@@ -45,11 +45,14 @@
   </div>
     <script>
       var box = document.getElementById('box1');
-	  var tag = document.getElementById('box2');
-	  tag.onclick = function(){
-	  box.style.display='none';
-	  setTimeout(function(){
-	  box.style.display='block';},1000);
+	  box.onclick = function(e){
+	  console.log(e.target.id)
+	  if (e.target.id ==='box2'){
+	    box.style.display='none';
+	    setTimeout(function(){
+	    box.style.display='block';},1000);
+	  
+	  }
 	  }
     </script>
 </body>
