@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def ad_view(request):
-    return render(request,"/template/AD.html")
+    return render(request,"/templates/AD.html")
